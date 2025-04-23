@@ -1,1 +1,11 @@
 
+{
+  "name": "pca9535",
+  "author": "Heins Schonhals",
+  "pins": [
+    "VCC", "GND", "INT", "A0", "A1", "A2", "SDA", "SCL",
+    "I/O0.0", "I/O0.1", "I/O0.2", "I/O0.3", "I/O0.4", "I/O0.5", "I/O0.6", "I/O0.7",
+    "I/O1.0", "I/O1.1", "I/O1.2", "I/O1.3", "I/O1.4", "I/O1.5", "I/O1.6", "I/O1.7"
+  ],
+  "controls": []
+}
