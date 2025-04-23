@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Heins Schonhals",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp32",
+      "top": -50,
+      "left": -100,
+      "attrs": {}
+    },
+    {
+      "type": "chip",
+      "id": "pca9535",
+      "label": "PCA9535",
+      "chip": "custom",
+      "chipConfig": {
+        "customChip": "pca9535",
+        "program": "custom-chips/pca9535.js"
+      },
+      "top": 100,
+      "left": 0
+    }
+  ],
+  "connections": [
+    ["esp32:33", "pca9535:SDA", "green", ["h"]],
+    ["esp32:5", "pca9535:SCL", "yellow", ["h"]],
+    ["esp32:GND", "pca9535:GND", "black", ["h"]],
+    ["esp32:3V3", "pca9535:VCC", "red", ["h"]]
+  ]
+}
